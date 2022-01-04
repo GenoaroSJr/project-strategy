@@ -1,5 +1,8 @@
 # Challenge - Strategy
 
+## Whay does this repository rexist?
+In addition to being a requirement for joining the back-end area of Include Technology, this repository was developed with the aim of studying the PHP language, the slim framework and the Strategy Pattern design pattern.
+
 ## What is the Strategy challenge?
 The challenge asks to implement a system using the Strategy pattern to display different messages according to the day of the week. As an increment, an API was added that will show if that day is a national holiday or not.
 
