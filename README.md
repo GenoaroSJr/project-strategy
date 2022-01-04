@@ -1,6 +1,6 @@
 # Challenge - Strategy
 
-## Whay does this repository rexist?
+## Whay does this repository exist?
 In addition to being a requirement for joining the back-end area of Include Technology, this repository was developed with the aim of studying the PHP language, the slim framework and the Strategy Pattern design pattern.
 
 ## What is the Strategy challenge?
