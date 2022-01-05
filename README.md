@@ -50,7 +50,7 @@ A message like "Essa API foi desenvolvida como critério de aceite para área de
 /collection/Collection API Teste Mova.postman_collection
 
 
-## Erros
+## Errors
 1) There is an error calling the files (will be fixed)
 
 ## Future Update
