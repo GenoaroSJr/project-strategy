@@ -53,5 +53,14 @@ A message like "Essa API foi desenvolvida como critério de aceite para área de
 ## Erros
 1) There is an error calling the files (will be fixed)
 
+## Future Update
+1) Implement the system on the docker
+2) Implement strategy pattern for class Data.
+3) Create a table for the phrases of the specific days.
+4) Create automatic bank migration.
+5) Implement unit tests.
+6) Implement integration test.
+7) Implement functional testing.
+
 
 
