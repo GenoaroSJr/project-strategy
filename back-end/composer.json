@@ -72,7 +72,9 @@
     },
     "autoload": {
         "psr-4": {
-            "Slim\\": "Slim"
+            "Slim\\": "Slim",
+            "src\\Models\\": "src/Models",
+            "config\\": "config"
         }
     },
     "autoload-dev": {

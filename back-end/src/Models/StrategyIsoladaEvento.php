@@ -1,10 +1,12 @@
 <?php
 
-require_once "StrategyInterface.php";
-require_once __DIR__ . '/../config/db.php';
+namespace src\Models;
+use src\Models\StrategyInterface;
+use config\DB;
+use PDO;
 
 //primeira estraégia isolada
-class Eventos implements StrategyInterface
+class StrategyIsoladaEvento implements StrategyInterface
 {
     private $eventos = array(
         '0'=>'Domingo: Descanse pois amanha é dia de trabalho!',

@@ -1,11 +1,10 @@
 <?php
 
-namespace Brasil;
-
-require_once "StrategyInterface.php";
+namespace src\Models;
+use src\Models\StrategyInterface;
 
 //primeira estraégia isolada
-class Brasil implements StrategyInterface
+class StrategyIsoladaBrasil implements StrategyInterface
 {
 
     private $msg;

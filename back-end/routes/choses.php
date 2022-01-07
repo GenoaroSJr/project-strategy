@@ -1,11 +1,16 @@
 <?php
 
+namespace routes;
+
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Slim\Factory\AppFactory;
 
-require __DIR__ . '/../Providers/Data.php';
-require __DIR__ . '/../Providers/StrategyEnviada.php';
+use src\Models\Data;
+use src\Models\StrategyDefineMensagemEnviada;
+use src\Models\StrategyIsoladaEvento;
+use src\Models\StrategyIsoladaBrasil;
+
 
 $app = AppFactory::create();
 
@@ -20,7 +25,7 @@ $app->get('/choses/API', function(Request $request, Response $response, array $a
 
     try{     
          //Chama a API dentro da Strategy Brasil e junta os textos;
-         $evento = new StrategyDefineMensagemEnviada(new Brasil());
+         $evento = new StrategyDefineMensagemEnviada(new StrategyIsoladaBrasil());
          $msg = $evento->getMensagemOpcao($data);
          
          //responde com o retorno que vier da API;
@@ -52,7 +57,7 @@ $app->get('/choses/Brasil', function(Request $request, Response $response, array
 
     try{
         //Chama a API dentro da Strategy Brasil e junta os textos;
-        $evento = new StrategyDefineMensagemEnviada(new Brasil());
+        $evento = new StrategyDefineMensagemEnviada(new StrategyIsoladaBrasil());
         //$msg = $evento->getMensagem($data);
         $msg = array(
             "mensagem" => $evento->getMensagem($data)
@@ -88,7 +93,7 @@ $app->get('/choses/Eventos', function(Request $request, Response $response, arra
     //Faz a chamada na função
     try{     
         //Chama a API dentro da Strategy Eventos;
-        $evento = new StrategyDefineMensagemEnviada(new Eventos());
+        $evento = new StrategyDefineMensagemEnviada(new StrategyIsoladaEvento());
         //$msg = $evento->getMensagem($data);
         
         $msg = array(
@@ -123,7 +128,7 @@ $app->get('/choses/Agenda', function(Request $request, Response $response, array
     //Faz a chamada na função
     try{     
         //Chama a API dentro da Strategy Brasil e junta os textos;
-        $evento = new StrategyDefineMensagemEnviada(new Eventos());
+        $evento = new StrategyDefineMensagemEnviada(new StrategyIsoladaEvento());
         $msg = $evento->getMensagemOpcao($data);
         
         //responde com o retorno que vier da API;

@@ -1,7 +1,6 @@
 <?php
 
-require "StrategyIsoladaBrasil.php";
-require "StrategyIsoladaEvento.php";
+namespace src\Models;
 
 class StrategyDefineMensagemEnviada
 {

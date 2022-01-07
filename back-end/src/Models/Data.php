@@ -1,6 +1,6 @@
 <?php
 
-namespace Data;
+namespace src\Models;
 
 //coletando a data:
 class Data

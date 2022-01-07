@@ -1,5 +1,6 @@
 <?php
 
+namespace src\Models;
 //interface 
 interface StrategyInterface 
 {
