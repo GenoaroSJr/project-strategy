@@ -10,6 +10,7 @@ use src\Models\Data;
 use src\Models\StrategyDefineMensagemEnviada;
 use src\Models\StrategyIsoladaEvento;
 use src\Models\StrategyIsoladaBrasil;
+use config\DB;
 
 
 $app = AppFactory::create();
