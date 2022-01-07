@@ -52,7 +52,8 @@ It can be found in this repository, in the directory:
 
 
 ## Errors
-1) There is an error calling the files (will be fixed)
+1) There is an error calling the files [FIXED].
+Annotation: The bug was fixed by changing the design default to psr-4.
 
 ## Future Update
 1) Implement the system on the docker
