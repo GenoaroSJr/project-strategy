@@ -60,7 +60,7 @@ Annotation: The bug was fixed by changing the design default to psr-4.
 1) Implement the system on the docker
 2) Implement strategy pattern for class Data.
 3) Create a table for the phrases of the specific days.
-4) Create automatic bank migration.
+4) Create automatic database migration.
 5) Implement unit tests.
 6) Implement integration test.
 7) Implement functional testing.
