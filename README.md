@@ -18,7 +18,7 @@ git clone: https://github.com/GenoaroSJr/project-strategy.git
 cd project-strategy/back-end
 
 # Install dependencies
-composer update
+composer install
 ```
 
 ## Configuring database
